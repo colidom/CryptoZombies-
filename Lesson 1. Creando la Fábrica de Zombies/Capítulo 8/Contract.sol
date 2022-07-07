@@ -1,6 +1,8 @@
-pragma solidity ^0.4.25;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.4.20;
 
 contract ZombieFactory {
+    uint256 dnaDigits = 16;
     uint256 dnaModulus = 10**dnaDigits;
 
     struct Zombie {
@@ -9,7 +11,7 @@ contract ZombieFactory {
     }
     Zombie[] public zombies;
 
-    function createZombie(string _name, uint256 _dna) {
+    function createZombie(string _name, uint256 _dna) public {
         zombies.push(Zombie(_name, _dna));
     }
 }
