@@ -1,4 +1,6 @@
-pragma solidity ^0.4.19;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.4.20;
+import "./zombiefactory.sol";
 
 contract ZombieFactory {
     event NewZombie(uint256 zombieId, string name, uint256 dna);
