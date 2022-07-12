@@ -1,5 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.4.20;
+pragma solidity ^0.4.19;
 
 contract ZombieFactory {
     event NewZombie(uint256 zombieId, string name, uint256 dna);
@@ -17,7 +16,7 @@ contract ZombieFactory {
     mapping(uint256 => address) public zombieToOwner;
     mapping(address => uint256) ownerZombieCount;
 
-    function _createZombie(string _name, uint256 _dna) internal {
+    function _createZombie(string _name, uint256 _dna) private {
         uint256 id = zombies.push(Zombie(_name, _dna)) - 1;
         zombieToOwner[id] = msg.sender;
         ownerZombieCount[msg.sender]++;
