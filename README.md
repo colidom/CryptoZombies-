@@ -16,7 +16,7 @@ Este repositorio contiene los códigos fuente de las lecciones de [Cryptozombies
 Puede simplemente clonar el proyecto en su almacenamiento local con el siguiente comando:
 
 ```
-git clone https://github.com/colidom/CryptoZombies.git
+https://github.com/colidom/crypto-zombies.git
 ```
 
 O hacer un fork para modificar los códigos de ejemplo para su propio estudio.
